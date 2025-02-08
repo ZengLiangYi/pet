@@ -22,7 +22,6 @@
 	position: relative;
 	top: 10vw;
 	z-index: 2; /* 层级高于图片 */
-	width: 48vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center; /* 垂直居中 */
