@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adopt</title>
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/adopt.css" />
+		<script src="styles/jquery.js"></script>
+		<script src="styles/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="home.html"> Logo </a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarContent"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about_us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="adopt.html">Adopt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="donate.html">Donate</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 主要内容区域 -->
+		<main>
+			<section class="hero-section">
+				<!-- 背景图片 -->
+				<img src="img/main-bg.jpg" alt="背景图片" />
+				<!-- 文字覆盖层 -->
+				<div class="text-overlay">
+					<h1>Adopt</h1>
+				</div>
+			</section>
+			<div class="container p-5 main">
+				<h1 class="mb-5">Adoption instead oipurchasel Contact us If you are interesled!</h1>
+				<!-- 展示区域 -->
+				<div id="image-container" class="row">
+					<!-- JavaScript -->
+				</div>
+			</div>
+		</main>
+	</body>
+	<script>
+		const images = [
+			{ src: 'img/main-bg.jpg', alt: '图片 1', name: '图片 1 名称' },
+			{ src: 'img/main-bg.jpg', alt: '图片 2', name: '图片 2 名称' },
+			{ src: 'img/main-bg.jpg', alt: '图片 3', name: '图片 3 名称' },
+			{ src: 'img/main-bg.jpg', alt: '图片 4', name: '图片 4 名称' },
+			{ src: 'img/main-bg.jpg', alt: '图片 5', name: '图片 5 名称' },
+			{ src: 'img/main-bg.jpg', alt: '图片 6', name: '图片 6 名称' },
+		];
+
+		const container = document.getElementById('image-container');
+
+		images.forEach((image) => {
+			const colDiv = document.createElement('div');
+			colDiv.className = 'col-md-4 text-center px-5';
+
+			const ratioDiv = document.createElement('div');
+			ratioDiv.className = 'ratio ratio-1x1';
+
+			const img = document.createElement('img');
+			img.src = image.src;
+			img.className = 'img-fluid rounded-circle';
+			img.alt = image.alt;
+
+			ratioDiv.appendChild(img);
+			colDiv.appendChild(ratioDiv);
+
+			const h5 = document.createElement('h5');
+			h5.className = 'my-5';
+			h5.textContent = image.name;
+
+			colDiv.appendChild(h5);
+			container.appendChild(colDiv);
+
+			// 添加 onclick 事件处理程序
+			colDiv.onclick = function () {
+				window.location.href = 'contact.html'; // 跳转到 contact.html
+			};
+		});
+	</script>
+</html>

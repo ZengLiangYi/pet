@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/contact.css" />
+		<script src="styles/jquery.js"></script>
+		<script src="styles/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="home.html"> Logo </a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarContent"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about_us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="adopt.html">Adopt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="donate.html">Donate</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 主要内容区域 -->
+		<main>
+			<section class="hero-section">
+				<!-- 背景图片 -->
+				<img src="img/main-bg.jpg" alt="背景图片" />
+				<!-- 文字覆盖层 -->
+				<div class="text-overlay">
+					<h1>Contact Us</h1>
+				</div>
+			</section>
+			<div class="container p-5">
+				<h1 class="mb-3">
+					If yau have any questions about stray animals, or for adopt, donate and rescuesend us a
+					message!
+				</h1>
+				<form id="myForm">
+					<!-- 第一项：First Name -->
+					<div class="mb-3">
+						<input type="text" class="form-control" placeholder="First Name" />
+					</div>
+
+					<!-- 第二项：Last Name -->
+					<div class="mb-3">
+						<input type="text" class="form-control" placeholder="Last Name" />
+					</div>
+
+					<!-- 第三项：日期选择框 -->
+					<div class="mb-3">
+						<input type="date" class="form-control" />
+					</div>
+
+					<!-- 第四项：Email -->
+					<div class="mb-3">
+						<input type="email" class="form-control" placeholder="Email" />
+					</div>
+
+					<!-- 第五项：多选框 -->
+					<div class="mb-3 border p-3 rounded">
+						<p class="mb-2">Do you like cats or dogs?</p>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="dogs" />
+							<label class="form-check-label" for="dogs">Dogs</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="cats" />
+							<label class="form-check-label" for="cats">Cats</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="other" />
+							<label class="form-check-label" for="other">Other</label>
+						</div>
+					</div>
+
+					<!-- 第六项：下拉选择框 -->
+					<div class="mb-3">
+						<label for="websiteRating" class="form-label">Do you like this website?</label>
+						<select class="form-select" id="websiteRating">
+							<option value="1" selected>Yes</option>
+							<option value="2">No</option>
+							<option value="3">Maybe</option>
+						</select>
+					</div>
+
+					<!-- 第七项：Textarea -->
+					<div class="mb-3">
+						<label for="shortReview" class="form-label">Please give us a short review</label>
+						<textarea
+							class="form-control"
+							id="shortReview"
+							rows="4"
+							placeholder="Please write your review here..."
+						></textarea>
+					</div>
+
+					<!-- 提交按钮 -->
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+	<!-- 自定义 JavaScript -->
+	<script>
+		// 获取表单元素
+		const form = document.getElementById('myForm');
+
+		// 监听表单的提交事件
+		form.addEventListener('submit', function (event) {
+			alert('Submitted!'); // 弹出 alert
+		});
+	</script>
+</html>
