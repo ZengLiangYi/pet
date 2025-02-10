@@ -13,10 +13,10 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium fs-5 fw-bold">
 		<div class="container">
 			<a class="navbar-brand" href="home.html">
-				<img src="img/logo.png" alt="Logo" height="50" />
+				<img src="img/logo.png" alt="Logo" height="60" />
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
 				aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,8 +164,20 @@
 					<input type="text" class="form-control" id="creditCard" placeholder="Credit Card Number" />
 				</div>
 
+				<div class="row g-3">
+					<div class="col-sm-3">
+						<label for="date" class="form-label">Expiration Date:</label>
+						<input type="date" class="form-control" id="date" placeholder="Month" aria-label="Month">
+					</div>
+					<div class="col-sm-3">
+						<label for="cvv" class="form-label">CVV Number:</label>
+						<input type="text" class="form-control" id="cvv" placeholder="CVV Number"
+							aria-label="CVV Number:">
+					</div>
+				</div>
+
 				<!-- 同意 -->
-				<div class="form-check mb-3">
+				<div class="form-check my-3">
 					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
 					<label class="form-check-label" for="flexCheckChecked2">
 						I'd like to cover the fees associated with my donation so more goes to animals in your care.
@@ -228,5 +240,15 @@
 		</div>
 	</footer>
 </body>
+<!-- 自定义 JavaScript -->
+<script>
+	// 获取表单元素
+	const form = document.getElementById('myForm');
+
+	// 监听表单的提交事件
+	form.addEventListener('submit', function (event) {
+		alert('Thank You for your donation!'); // 弹出 alert
+	});
+</script>
 
 </html>
