@@ -1,250 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adopt</title>
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/adopt.css" />
+		<script src="styles/jquery.js"></script>
+		<script src="styles/bootstrap.bundle.min.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Adopt</title>
-	<link rel="stylesheet" href="styles/bootstrap.min.css" />
-	<link rel="stylesheet" href="styles/main.css" />
-	<link rel="stylesheet" href="styles/adopt.css" />
-	<script src="styles/jquery.js"></script>
-	<script src="styles/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium fs-5 fw-bold">
-		<div class="container">
-			<a class="navbar-brand" href="home.html">
-				<img src="img/logo.png" alt="Logo" height="60" />
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-				aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarContent">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="home.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about_us.html">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="adopt.html">Adopt</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="donate.html">Donate</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium fs-5 fw-bold">
+			<div class="container">
+				<a class="navbar-brand" href="home.html">
+					<img src="img/logo.png" alt="Logo" height="60" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarContent"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a
+								id="donate-b"
+								class="nav-link btn btn-primary bg-success text-white position-relative"
+								href="donate.html"
+							>
+								<i class="fas fa-heart beating-heart me-2"></i>Donate
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about_us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="adopt.html">Adopt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-	<!-- 主要内容区域 -->
-	<main>
-		<section class="hero-section">
-			<!-- 背景图片 -->
-			<img src="img/adopt_bg.jpg" alt="背景图片" />
-			<!-- 文字覆盖层 -->
-			<div class="text-overlay">
-				<h1>Adopt</h1>
+		</nav>
+		<!-- 主要内容区域 -->
+		<main>
+			<section class="hero-section">
+				<!-- 背景图片 -->
+				<img src="img/adopt_bg.jpg" alt="背景图片" />
+				<!-- 文字覆盖层 -->
+				<div class="text-overlay">
+					<h1>Adopt</h1>
+				</div>
+			</section>
+			<div class="container p-5 main">
+				<h1 class="mb-5">Adoption instead oipurchasel Contact us If you are interesled!</h1>
+				<!-- 展示区域 -->
+				<div id="image-container" class="row">
+					<!-- JavaScript -->
+				</div>
 			</div>
-		</section>
-		<div class="container p-5 main">
-			<h1 class="mb-5">Adoption instead oipurchasel Contact us If you are interesled!</h1>
-			<!-- 展示区域 -->
-			<div id="image-container" class="row">
-				<!-- JavaScript -->
-			</div>
-		</div>
-	</main><!-- Footer -->
-	<footer class="bg-dark text-white">
-		<div class="container p-5">
-			<div class="row">
-				<div class="col-md-4 mt-3">
-					<img src="img/logo_white.png" alt="Logo" height="50" />
-					<p class="mt-3">
-						Our residents make Caledon a vibrant
-						place to live, work and play.
-					</p>
-					<div class="social-icons mt-3">
-						<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+		</main>
+		<!-- Footer -->
+		<footer class="bg-dark text-white">
+			<div class="container p-5">
+				<div class="row">
+					<div class="col-md-4 mt-3">
+						<img src="img/logo.png" alt="Logo" height="50" />
+						<p class="mt-3">
+							Protecting environment and stray animal are everyone's responsibility.
+						</p>
+						<div class="social-icons mt-3">
+							<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 mt-3">
+						<h6>CONTACT US</h6>
+						<p>1265 Military Trail, Scarborough, ON M1C 1A4</p>
+						<h6 class="mt-3">Phone</h6>
+						<a class="text-success nav-link" href="tel:4162878872">4162878872</a>
+						<h6 class="mt-3">Toll Free</h6>
+						<a class="text-success nav-link" href="tel:4162878872">+1 416-287-8872</a>
+					</div>
+					<div class="col-md-4 mt-3">
+						<h6>OTHER WEBSITES</h6>
+						<div class="text-success">
+							<a class="nav-link" href="home.html">
+								<h6>Home</h6>
+							</a>
+							<a class="nav-link" href="about_us.html">
+								<h6>About Us</h6>
+							</a>
+							<a class="nav-link" href="adopt.html">
+								<h6>Adopt</h6>
+							</a>
+							<a class="nav-link" href="donate.html">
+								<h6>Donate</h6>
+							</a>
+							<a class="nav-link" href="contact.html">
+								<h6>Contact</h6>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 mt-3">
-					<h6>CONTACT US</h6>
-					<p>
-						1265 Military Trail, Scarborough, ON M1C 1A4
-					</p>
-					<h6 class="mt-3">Phone</h6>
-					<a class="text-success nav-link" href="tel:4162878872">4162878872</a>
-					<h6 class="mt-3">Toll Free</h6>
-					<a class="text-success nav-link" href="tel:4162878872">+1 416-287-8872</a>
-				</div>
-				<div class="col-md-4 mt-3">
-					<h6>OTHER WEBSITES</h6>
-					<div class="text-success">
-						<a class="nav-link" href="home.html">
-							<h6>Home</h6>
-						</a>
-						<a class="nav-link" href="about_us.html">
-							<h6>About Us</h6>
-						</a>
-						<a class="nav-link" href="adopt.html">
-							<h6>Adopt</h6>
-						</a>
-						<a class="nav-link" href="donate.html">
-							<h6>Donate</h6>
-						</a>
-						<a class="nav-link" href="contact.html">
-							<h6>Contact</h6>
-						</a>
-					</div>
-				</div>
 			</div>
-		</div>
-	</footer>
-</body>
-<script>
-	const data = [
-		{
-			src: 'img/adopt_c1.jpg', alt: '图片 1', info: {
-				name: 'Lucy',
-				sex: 'Male',
-				breed: 'Ragdoll',
-				age: '2 Years',
-				id: '332523'
-			}
-		},
-		{
-			src: 'img/adopt_c2.jpg', alt: '图片 2', info: {
-				name: 'Bean',
-				sex: 'Male',
-				breed: 'Golden British Shorthair cats',
-				age: '1 Years',
-				id: '231515'
-			}
-		},
-		{
-			src: 'img/adopt_c3.jpg', alt: '图片 3', info: {
-				name: 'Jack',
-				sex: 'Male',
-				breed: 'West Highland Terrier',
-				age: '1 Years',
-				id: '512543'
-			}
-		},
-		{
-			src: 'img/adopt_c4.jpg', alt: '图片 4', info: {
-				name: 'Sixteen',
-				sex: 'Female',
-				breed: 'pug',
-				age: '1 Years',
-				id: '214211'
-			}
-		},
-		{
-			src: 'img/adopt_c5.jpg', alt: '图片 5', info: {
-				name: 'Roberta',
-				sex: 'Female',
-				breed: 'American Shorthair',
-				age: '3 months',
-				id: '512341'
-			}
-		},
-		{
-			src: 'img/adopt_c6.jpg', alt: '图片 6', info: {
-				name: 'Lucky',
-				sex: 'Male',
-				breed: 'Jack Russell Terrier',
-				age: '4 Years',
-				id: '414252'
-			}
-		},
-		{
-			src: 'img/adopt_c7.jpg', alt: '图片 7', info: {
-				name: 'Brownie',
-				sex: 'Male',
-				breed: 'Jack Russell Terrier',
-				age: 'Jack Russell Terrier',
-				id: '834325'
-			}
-		},
-		{
-			src: 'img/adopt_c8.jpg', alt: '图片 8', info: {
-				name: 'Mina',
-				sex: 'Female',
-				breed: 'British Shorthair',
-				age: '6 Months',
-				id: '932345'
-			}
-		},
-	];
+		</footer>
+	</body>
+	<script>
+		const data = [
+			{
+				src: 'img/adopt_c1.jpg',
+				alt: '图片 1',
+				info: {
+					name: 'Lucy',
+					sex: 'Male',
+					breed: 'Ragdoll',
+					age: '2 Years',
+					id: '332523',
+				},
+			},
+			{
+				src: 'img/adopt_c2.jpg',
+				alt: '图片 2',
+				info: {
+					name: 'Bean',
+					sex: 'Male',
+					breed: 'Golden British Shorthair cats',
+					age: '1 Years',
+					id: '231515',
+				},
+			},
+			{
+				src: 'img/adopt_c3.jpg',
+				alt: '图片 3',
+				info: {
+					name: 'Jack',
+					sex: 'Male',
+					breed: 'West Highland Terrier',
+					age: '1 Years',
+					id: '512543',
+				},
+			},
+			{
+				src: 'img/adopt_c4.jpg',
+				alt: '图片 4',
+				info: {
+					name: 'Sixteen',
+					sex: 'Female',
+					breed: 'pug',
+					age: '1 Years',
+					id: '214211',
+				},
+			},
+			{
+				src: 'img/adopt_c5.jpg',
+				alt: '图片 5',
+				info: {
+					name: 'Roberta',
+					sex: 'Female',
+					breed: 'American Shorthair',
+					age: '3 months',
+					id: '512341',
+				},
+			},
+			{
+				src: 'img/adopt_c6.jpg',
+				alt: '图片 6',
+				info: {
+					name: 'Lucky',
+					sex: 'Male',
+					breed: 'Jack Russell Terrier',
+					age: '4 Years',
+					id: '414252',
+				},
+			},
+			{
+				src: 'img/adopt_c7.jpg',
+				alt: '图片 7',
+				info: {
+					name: 'Brownie',
+					sex: 'Male',
+					breed: 'Jack Russell Terrier',
+					age: 'Jack Russell Terrier',
+					id: '834325',
+				},
+			},
+			{
+				src: 'img/adopt_c8.jpg',
+				alt: '图片 8',
+				info: {
+					name: 'Mina',
+					sex: 'Female',
+					breed: 'British Shorthair',
+					age: '6 Months',
+					id: '932345',
+				},
+			},
+		];
 
-	const container = document.getElementById('image-container');
+		const container = document.getElementById('image-container');
 
-	data.forEach((item) => {
-		const colDiv = document.createElement('div');
-		colDiv.className = 'col-md-6 g-4';
+		data.forEach((item) => {
+			const colDiv = document.createElement('div');
+			colDiv.className = 'col-md-6 g-4';
 
-		const areaDiv = document.createElement('div');
-		areaDiv.className = 'card adopt-card';
+			const areaDiv = document.createElement('div');
+			areaDiv.className = 'card adopt-card';
 
-		const ratioDiv = document.createElement('div');
-		ratioDiv.className = 'ratio ratio-1x1';
+			const ratioDiv = document.createElement('div');
+			ratioDiv.className = 'ratio ratio-1x1';
 
-		const img = document.createElement('img');
-		img.src = item.src;
-		img.className = 'img-fluid';
-		img.alt = item.alt;
+			const img = document.createElement('img');
+			img.src = item.src;
+			img.className = 'img-fluid';
+			img.alt = item.alt;
 
-		ratioDiv.appendChild(img);
-		areaDiv.appendChild(ratioDiv);
+			ratioDiv.appendChild(img);
+			areaDiv.appendChild(ratioDiv);
 
-		const infoDiv = document.createElement('div');
-		infoDiv.className = 'adopt-card-body';
+			const infoDiv = document.createElement('div');
+			infoDiv.className = 'adopt-card-body';
 
-		const nameDiv = document.createElement('h5');
-		nameDiv.className = 'fw-bold mb-3';
-		nameDiv.textContent = item.info.name;
-		infoDiv.appendChild(nameDiv);
+			const nameDiv = document.createElement('h5');
+			nameDiv.className = 'fw-bold mb-3';
+			nameDiv.textContent = item.info.name;
+			infoDiv.appendChild(nameDiv);
 
-		const sexDiv = document.createElement('div');
-		sexDiv.innerHTML = `<b>Sex：</b>${item.info.sex}`;
-		infoDiv.appendChild(sexDiv);
+			const sexDiv = document.createElement('div');
+			sexDiv.innerHTML = `<b>Sex：</b>${item.info.sex}`;
+			infoDiv.appendChild(sexDiv);
 
-		const breedDiv = document.createElement('div');
-		breedDiv.innerHTML = `<b>Breed：</b>${item.info.breed}`;
-		infoDiv.appendChild(breedDiv);
+			const breedDiv = document.createElement('div');
+			breedDiv.innerHTML = `<b>Breed：</b>${item.info.breed}`;
+			infoDiv.appendChild(breedDiv);
 
-		const ageDiv = document.createElement('div');
-		ageDiv.innerHTML = `<b>Age：</b>${item.info.age}`;
-		infoDiv.appendChild(ageDiv);
+			const ageDiv = document.createElement('div');
+			ageDiv.innerHTML = `<b>Age：</b>${item.info.age}`;
+			infoDiv.appendChild(ageDiv);
 
-		const idDiv = document.createElement('div');
-		idDiv.innerHTML = `<b>Animal Id：</b>${item.info.id}`;
-		infoDiv.appendChild(idDiv);
+			const idDiv = document.createElement('div');
+			idDiv.innerHTML = `<b>Animal Id：</b>${item.info.id}`;
+			infoDiv.appendChild(idDiv);
 
-		const a = document.createElement('a');
-		a.className = 'text-info text-decoration-none';
-		a.innerHTML = `Meet ${item.info.name} >>`;
-		infoDiv.appendChild(a);
+			const a = document.createElement('a');
+			a.className = 'text-info text-decoration-none';
+			a.innerHTML = `Meet ${item.info.name} >>`;
+			infoDiv.appendChild(a);
 
-		areaDiv.appendChild(infoDiv);
-		colDiv.appendChild(areaDiv);
-		container.appendChild(colDiv);
+			areaDiv.appendChild(infoDiv);
+			colDiv.appendChild(areaDiv);
+			container.appendChild(colDiv);
 
-		// 添加 onclick 事件处理程序
-		colDiv.onclick = function () {
-			window.location.href = 'contact.html'; // 跳转到 contact.html
-		};
-	});
-</script>
-
+			// 添加 onclick 事件处理程序
+			colDiv.onclick = function () {
+				window.location.href = 'contact.html'; // 跳转到 contact.html
+			};
+		});
+	</script>
 </html>

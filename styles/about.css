@@ -40,3 +40,42 @@
 .text-content {
 	font-size: 1.25rem;
 }
+
+.image-container {
+	aspect-ratio: 4/3;
+	overflow: hidden;
+	transition: opacity 0.3s ease;
+}
+
+.text-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.content-wrapper {
+	position: relative;
+	height: 100%;
+}
+
+.content-wrapper:hover .image-container {
+	opacity: 0;
+}
+
+.content-wrapper:hover .text-container {
+	opacity: 1;
+}
+
+.rainbow-underline {
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(90deg, #4caf50, #9c27b0, #2196f3, #00bcd4, #f44336, #ff9800, #8bc34a);
+}
