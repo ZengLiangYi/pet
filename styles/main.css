@@ -25,7 +25,13 @@
 	object-position: top;
 }
 
-#donate-b:hover .beating-heart {
+.donate-btn {
+	position: absolute;
+	top: -3rem;
+	right: 0;
+}
+
+.donate-btn:hover .beating-heart {
 	animation: heartbeat 1.2s infinite;
 }
 
@@ -44,5 +50,11 @@
 	}
 	70% {
 		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.donate-btn {
+		position: relative;
 	}
 }
