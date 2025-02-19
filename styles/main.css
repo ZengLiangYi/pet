@@ -25,6 +25,12 @@
 	object-position: top;
 }
 
+.donate-btn {
+	position: absolute;
+	top: -3rem;
+	right: 0;
+}
+
 .donate-btn:hover .beating-heart {
 	animation: heartbeat 1.2s infinite;
 }
