@@ -1,176 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About Us</title>
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+		<script src="styles/jquery.js"></script>
+		<script src="styles/bootstrap.bundle.min.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>About Us</title>
-	<link rel="stylesheet" href="styles/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-	<link rel="stylesheet" href="styles/main.css" />
-	<link rel="stylesheet" href="styles/about.css" />
-	<script src="styles/jquery.js"></script>
-	<script src="styles/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium fs-5 fw-bold pt-5">
-		<div class="container">
-			<a class="navbar-brand" href="home.html">
-				<img src="img/logo.png" alt="Logo" height="60" />
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-				aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarContent">
-				<ul class="navbar-nav ms-auto position-relative">
-					<li class="nav-item donate-btn">
-						<a class="nav-link btn btn-primary bg-success text-white position-relative" href="donate.html">
-							<i class="fas fa-heart beating-heart me-2"></i>Donate
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="home.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="about_us.html">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="adopt.html">Adopt</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- 主要内容区域 -->
-	<main>
-		<section class="hero-section">
-			<!-- 背景图片 -->
-			<img src="img/about_bg.jpg" alt="背景图片" />
-			<!-- 文字覆盖层 -->
-			<div class="text-overlay">
-				<h1>About Us</h1>
-			</div>
-		</section>
-		<div class="container-fluid px-0 mt-5">
-			<!-- 创建行 -->
-			<div class="row g-0" id="content-section"></div>
-		</div>
-		<div class="container py-5">
-			<div class="mx-auto" style="max-width: 800px">
-				<h1 class="fw-bold position-relative d-inline-block">
-					Your best life together,
-					<div class="">made even better.</div>
-					<div class="rainbow-underline position-absolute"></div>
-				</h1>
-				<p class="text-secondary my-3">
-					If you love animals as much as we do, you understand why we work so hard to provide the
-					best life possible for the animals in our care and the people who bond with them. It's
-					our expertise at every step of the journey, combined with the loving homes provided by
-					people in our community that complete the circle. From the very moment an animal comes
-					into our fold, their wellbeing is our priority.
-				</p>
-				<div class="dropdown d-flex justify-content-end">
-					<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Further Information
-					</button>
-					<ul class="dropdown-menu" id="link-section"></ul>
+	<body>
+		<nav
+			class="navbar navbar-expand-lg navbar-light bg-light sticky-top fw-medium fs-4 fw-bold pt-5"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="home.html">
+					<img src="img/logo.png" alt="Logo" height="60" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarContent"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto position-relative">
+						<li class="nav-item donate-btn fs-5">
+							<a
+								class="nav-link btn btn-primary bg-success text-white position-relative"
+								href="donate.html"
+							>
+								<i class="fas fa-heart beating-heart me-2"></i>Donate
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="about_us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="adopt.html">Adopt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</main>
-
-	<!-- Footer -->
-	<footer class="bg-dark text-white">
-		<div class="container p-5">
-			<div class="row">
-				<div class="col-md-4 mt-3">
-					<img src="img/logo.png" alt="Logo" height="50" />
-					<p class="mt-3">
-						Protecting environment and stray animal are everyone's responsibility.
+		</nav>
+		<!-- 主要内容区域 -->
+		<main>
+			<section class="hero-section">
+				<!-- 背景图片 -->
+				<img src="img/about_bg.jpg" alt="背景图片" />
+				<!-- 文字覆盖层 -->
+				<div class="text-overlay">
+					<h1>About Us</h1>
+				</div>
+			</section>
+			<section class="container my-5 py-5">
+				<!-- 创建行 -->
+				<div class="row align-items-center">
+					<div class="col-md-8">
+						<h2 class="fw-bold mb-4">Who We Are</h2>
+						<p class="text-secondary">
+							Animal shelters are places filled with warmth, compassion, and second chances. We
+							strive to treat every animal with kindness, understanding that each one has a story of
+							struggle and survival.
+							<br />An animal shelter is more than just a temporary refuge—it’s a place where hope
+							is restored, where tails start wagging again, and where every purr or happy bark is a
+							reminder that love can transform lives.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/about_a1.jpg" class="img-fluid" alt="A person and dog sitting together" />
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid px-0 mt-5">
+				<!-- 创建行 -->
+				<div class="row g-0" id="content-section"></div>
+			</section>
+			<section class="container py-5">
+				<div class="mx-auto" style="max-width: 800px">
+					<h1 class="fw-bold position-relative d-inline-block">
+						Article about shelter animal
+						<div class="rainbow-underline position-absolute"></div>
+					</h1>
+					<p class="text-secondary my-3">
+						Every year, millions of animals find themselves in shelters, each with a story of loss,
+						resilience, and hope. Some were abandoned, others lost, and many surrendered due to
+						circumstances beyond their control. Despite their uncertain pasts, these animals still
+						long for companionship, love, and a second chance. Shelters work tirelessly to provide
+						care, medical attention, and a safe haven, but the ultimate goal is to find them a
+						forever home. Adopting a shelter pet not only saves a life but also creates an
+						unbreakable bond built on gratitude and trust. With kindness and awareness, we can all
+						play a role in giving these animals the future they deserve.
 					</p>
-					<div class="social-icons mt-3">
-						<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					<div class="dropdown d-flex justify-content-end">
+						<button
+							class="btn dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Further Information
+						</button>
+						<ul class="dropdown-menu" id="link-section"></ul>
 					</div>
 				</div>
-				<div class="col-md-4 mt-3">
-					<h6>CONTACT US</h6>
-					<p>1265 Military Trail, Scarborough, ON M1C 1A4</p>
-					<h6 class="mt-3">Phone</h6>
-					<a class="text-success nav-link" href="tel:4162878872">4162878872</a>
-					<h6 class="mt-3">Toll Free</h6>
-					<a class="text-success nav-link" href="tel:4162878872">+1 416-287-8872</a>
-				</div>
-				<div class="col-md-4 mt-3">
-					<h6>OTHER WEBSITES</h6>
-					<div class="text-success">
-						<a class="nav-link" href="home.html">
-							<h6>Home</h6>
-						</a>
-						<a class="nav-link" href="about_us.html">
-							<h6>About Us</h6>
-						</a>
-						<a class="nav-link" href="adopt.html">
-							<h6>Adopt</h6>
-						</a>
-						<a class="nav-link" href="donate.html">
-							<h6>Donate</h6>
-						</a>
-						<a class="nav-link" href="contact.html">
-							<h6>Contact</h6>
-						</a>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-dark text-white">
+			<div class="container p-5">
+				<div class="row">
+					<div class="col-md-4 mt-3">
+						<img src="img/logo.png" alt="Logo" height="50" />
+						<p class="mt-3">
+							Protecting environment and stray animal are everyone's responsibility.
+						</p>
+						<div class="social-icons mt-3">
+							<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 mt-3">
+						<h6>CONTACT US</h6>
+						<p>1265 Military Trail, Scarborough, ON M1C 1A4</p>
+						<h6 class="mt-3">Phone</h6>
+						<a class="text-success nav-link" href="tel:4162878872">4162878872</a>
+						<h6 class="mt-3">Toll Free</h6>
+						<a class="text-success nav-link" href="tel:4162878872">+1 416-287-8872</a>
+					</div>
+					<div class="col-md-4 mt-3">
+						<h6>OTHER WEBSITES</h6>
+						<div class="text-success">
+							<a class="nav-link" href="home.html">
+								<h6>Home</h6>
+							</a>
+							<a class="nav-link" href="about_us.html">
+								<h6>About Us</h6>
+							</a>
+							<a class="nav-link" href="adopt.html">
+								<h6>Adopt</h6>
+							</a>
+							<a class="nav-link" href="donate.html">
+								<h6>Donate</h6>
+							</a>
+							<a class="nav-link" href="contact.html">
+								<h6>Contact</h6>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</body>
-<script>
-	const data = [
-		{
-			title: 'Cause of stray animal',
-			content:
-				'<p>The global stray animals have become a menace recently due to uncontrolled reproduction of these animals, resulting in an increased population. The number has been skyrocketing due to the high reproduction of these stray animals. Strays are exposed to road accidents, attacks from humans, and dying from contagious diseases. Additionally, they have to endure severe weather conditions.</p><p>The two main causes of increased stray animals are economic challenges and a lack of access to veterinary care. According to some article, some individuals abandon their pets when they are faced with financial hardships as they are unable to pay for the caring costs such as food, shelter, and veterinary expenses. Additionally, relocation, health complications, and family challenges also contribute to the abandonment of animals. Veterinary services such as spay and neuter surgeries and vaccinations. When individuals are unable to cater to these costs or cannot access the nearby veterinarian, they tend to abandon the animals. </p>',
-			img: 'img/about_c1.png',
-		},
-		{
-			title: 'About us',
-			content:
-				'<p>These cats and dogs were abandoned by their families and found on the road or in the park. The food that they eat is from garbage heaps or the scraps people drop on the ground to stay alive. Some time they cross the street will hit by the passing car or starved to death. Many stray dogs or cats were injured or abused when we found them.</p><p>Our job is rescue those stray dogs and cats, we will bring them to pet hospital for treatment and feeding. The number is reduced by us or another animal shelter would taking some of the animals. The stray animal suffering can be resolved through spaying and neutering. After those dogs and cats are cured, We would help them find a new family! </p>',
-			img: 'img/about_c2.png',
-		},
-		{
-			title: 'Adopt',
-			content:
-				'<p>As statistics that there are about 200 million stray animals worldwide and 40 million in China alone. I think adopt animal instead of purchase is very important. People should creating a a sense of social responsibility and ecological responsibility to help individuals realize the significance of protecting animals, including stray animals, and the environment. </p>',
-			img: 'img/about_c3.jpg',
-			url: 'adopt.html',
-		},
-		{
-			title: 'Donate',
-			content:
-				'<p>Thank you for your donation, It help us alot more in work and protecting animals, including stray animals, and the environment. </p>',
-			img: 'img/about_c4.jpg',
-			url: 'donate.html',
-		},
-	];
+		</footer>
+	</body>
+	<script>
+		const data = [
+			{
+				title: 'Cause of stray animal',
+				content:
+					'<p>The global stray animals have become a menace recently due to uncontrolled reproduction of these animals, resulting in an increased population. The number has been skyrocketing due to the high reproduction of these stray animals. Strays are exposed to road accidents, attacks from humans, and dying from contagious diseases. Additionally, they have to endure severe weather conditions.</p><p>The two main causes of increased stray animals are economic challenges and a lack of access to veterinary care. According to some article, some individuals abandon their pets when they are faced with financial hardships as they are unable to pay for the caring costs such as food, shelter, and veterinary expenses. Additionally, relocation, health complications, and family challenges also contribute to the abandonment of animals. Veterinary services such as spay and neuter surgeries and vaccinations. When individuals are unable to cater to these costs or cannot access the nearby veterinarian, they tend to abandon the animals. </p>',
+				img: 'img/about_c1.png',
+			},
+			{
+				title: 'About us',
+				content:
+					'<p>These cats and dogs were abandoned by their families and found on the road or in the park. The food that they eat is from garbage heaps or the scraps people drop on the ground to stay alive. Some time they cross the street will hit by the passing car or starved to death. Many stray dogs or cats were injured or abused when we found them.</p><p>Our job is rescue those stray dogs and cats, we will bring them to pet hospital for treatment and feeding. The number is reduced by us or another animal shelter would taking some of the animals. The stray animal suffering can be resolved through spaying and neutering. After those dogs and cats are cured, We would help them find a new family! </p>',
+				img: 'img/about_c2.png',
+			},
+			{
+				title: 'Adopt',
+				content:
+					'<p>As statistics that there are about 200 million stray animals worldwide and 40 million in China alone. I think adopt animal instead of purchase is very important. People should creating a a sense of social responsibility and ecological responsibility to help individuals realize the significance of protecting animals, including stray animals, and the environment. </p>',
+				img: 'img/about_c3.jpg',
+				url: 'adopt.html',
+			},
+			{
+				title: 'Donate',
+				content:
+					'<p>Thank you for your donation, It help us alot more in work and protecting animals, including stray animals, and the environment. </p>',
+				img: 'img/about_c4.jpg',
+				url: 'donate.html',
+			},
+		];
 
-	const contentSection = document.getElementById('content-section');
-	contentSection.innerHTML = '';
-
-	// 遍历数据并创建相应的元素
-	data.forEach((item, index) => {
 		const contentSection = document.getElementById('content-section');
-		const col = document.createElement('div');
-		col.classList.add('col-6');
-		col.innerHTML = `
+		contentSection.innerHTML = '';
+
+		// 遍历数据并创建相应的元素
+		data.forEach((item, index) => {
+			const contentSection = document.getElementById('content-section');
+			const col = document.createElement('div');
+			col.classList.add('col-6');
+			col.innerHTML = `
     <a href="${item.url || '#'}">
         <div class="content-wrapper">
             <div class="image-container position-relative">
@@ -180,8 +220,8 @@
                 </div>
             </div>
             <div class='text-container text-white text-center d-flex align-items-center justify-content-center px-5' style='background-color: rgb(${Math.floor(
-			Math.random() * 156,
-		)}, ${Math.floor(Math.random() * 156)}, ${Math.floor(Math.random() * 156)});'>
+							Math.random() * 156,
+						)}, ${Math.floor(Math.random() * 156)}, ${Math.floor(Math.random() * 156)});'>
                 <div>
                     <h1 class="mb-3 fw-bolder">${item.title}</h1>
                     <div class="m-0">${item.content}</div>
@@ -190,27 +230,26 @@
         </div>
     </a>
 `;
-		contentSection.appendChild(col);
-	});
+			contentSection.appendChild(col);
+		});
 
-	const linkData = [
-		'https://www.torontohumanesociety.com/understanding-the-root-causes-of-stray-pets-a-complex-challenge/',
-		'https://www.oipa.org/international/stray-animals-are-neglected-and-abused/',
-		'https://mp.weixin.qq.com/s?__biz=MzA4NTk5NjYwOA==&mid=2652915751&idx=6&sn=03632a63ffa743f77d73de624813105d&chksm=8519967dbbe704e377ef1cef0b706f80be3db06af98a09bec0ec2f0865aeae912ad78cbbd0ec&scene=27',
-		'https://www.peta.org/issues/animal-companion-issues/overpopulation/',
-	];
+		const linkData = [
+			'https://www.torontohumanesociety.com/understanding-the-root-causes-of-stray-pets-a-complex-challenge/',
+			'https://www.oipa.org/international/stray-animals-are-neglected-and-abused/',
+			'https://mp.weixin.qq.com/s?__biz=MzA4NTk5NjYwOA==&mid=2652915751&idx=6&sn=03632a63ffa743f77d73de624813105d&chksm=8519967dbbe704e377ef1cef0b706f80be3db06af98a09bec0ec2f0865aeae912ad78cbbd0ec&scene=27',
+			'https://www.peta.org/issues/animal-companion-issues/overpopulation/',
+		];
 
-	const linkSection = document.getElementById('link-section');
-	linkSection.innerHTML = '';
-	linkData.forEach((link, index) => {
-		const linkBlock = document.createElement('li');
-		const linkElement = document.createElement('a');
-		linkElement.classList.add('dropdown-item');
-		linkElement.href = link;
-		linkElement.textContent = `Link ${index + 1}`;
-		linkBlock.appendChild(linkElement);
-		linkSection.appendChild(linkBlock);
-	});
-</script>
-
+		const linkSection = document.getElementById('link-section');
+		linkSection.innerHTML = '';
+		linkData.forEach((link, index) => {
+			const linkBlock = document.createElement('li');
+			const linkElement = document.createElement('a');
+			linkElement.classList.add('dropdown-item');
+			linkElement.href = link;
+			linkElement.textContent = `Link ${index + 1}`;
+			linkBlock.appendChild(linkElement);
+			linkSection.appendChild(linkBlock);
+		});
+	</script>
 </html>
